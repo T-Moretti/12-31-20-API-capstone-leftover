@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>API Hack Capstone</title>
+    <link rel="shortcut icon" href="#">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <h1>Leftover</h1>
+    </header>
+    <main>
+        <div class='wrapper' id='welcome'>
+            <p>
+                What're you going to do with that half of a cucumber left in your
+                fridge or those three potatoes you never used for that recipe? Don't 
+                throw it out! Enter your ingredient and see what you can make tonight!
+            </p>
+        </div>
+
+        <form id='js-search-form'>
+            <div class='wrapper'>
+                <label for="js-search-term">Enter ingredient:</label>
+                <input type="text" name='search-term' id='js-search-term' required>
+
+                <input type="submit" value='Let&#39s eat!'>
+            </div>        
+        </form>
+
+        <p id='js-error-message' class='error-message'></p>
+        <section class='results hidden'>
+            <h2>Results</h2>
+            <div id='results'></div>            
+        </section>
+    </main>
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="index.js"></script> 
+
+</body>
+</html>
